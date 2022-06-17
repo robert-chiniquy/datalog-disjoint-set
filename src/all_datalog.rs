@@ -14,8 +14,6 @@ type P = usize;
 ascent! {
     relation input(O);
 
-    input(o)  <-- for o in (1..1000);
-
     lattice parent(O, Dual<P>);
 
     parent(O1, Dual(*O2)), parent(O2, Dual(*O1)) <-- input(O1), input(O2), if equality(*O1,*O2);

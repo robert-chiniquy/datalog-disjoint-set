@@ -6,7 +6,7 @@ edition = "2021"
 [dependencies]
 common = {git="https://github.com/robert-chiniquy/second-order-graph-trial.git"}
 ascent = "0.2.1"
-criterion = "0.3.5"
+criterion = {version="0.3.5", features=["html_reports"]}
 
 [[bench]]
 name = "bench"
