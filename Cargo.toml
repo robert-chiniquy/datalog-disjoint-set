@@ -1,0 +1,16 @@
+[package]
+name = "datalog-disjoint-set"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+common = {git="https://github.com/robert-chiniquy/second-order-graph-trial.git"}
+ascent = "0.2.1"
+criterion = "0.3.5"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.bench]
+debug = true
